@@ -1,0 +1,31 @@
+close all ;
+clear all;
+clc;
+
+%Q1
+k = randi([-30, 12]);
+
+%Q1 b
+A = randi([-40, 10], 20, 20);
+A(A< k) = 0;
+
+%Q1 c
+c = mean2(A);
+
+%Q1 d
+A(randi(numel(A)));
+
+%Q1 e
+
+% cheat method imagesc(A)
+
+%Q1 f
+
+B = A(randperm(size(A,1),4),:);
+
+%Q1 g
+proportion = numel(B(B ~= 0)) / numel(B(B == 0));%numel(B(1:4,:)~=0)
+
+%Q1 h
+fprintf('Answer to a)%f5 ,answer to c) %f5')
+
